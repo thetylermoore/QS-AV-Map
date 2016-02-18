@@ -1,0 +1,187 @@
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  /* this is what makes it gray */
+  /* background: #460000; */
+  background: url("QSBackground.jpg");
+  background-attachment:fixed;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+/* border-radius: 12px; */
+}
+h1 {
+  font-family: helvetica, cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #323233;
+  margin: 60px 0 0 0;
+}
+
+h2 {
+  text-align: center;
+  color: #373737;
+}
+
+h3 {
+  text-align: center;
+  color: #373737;
+  margin: 0px 0 0 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.map{
+  background-image: url("images/greatwallzoom.png");
+}
+.equipment1{
+  background-image: url("images/EXPRESS220_600_200_alt.jpg");
+}
+.equipment2{
+  background-image: url("images/DXP600_200.jpg");
+}
+.equipment3{
+  background-image: url("images/tlp710tv_600_200.jpg");
+}
+.equipment4{
+  background-image: url("images/ipl250_600_200.jpg");
+}
+
+.info {
+  float: right;
+}
+
+button {
+        -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+        -webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+        box-shadow: 0px 0px 0px 2px #9fb4f2;
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+        background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+        background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+        background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+        background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+        background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+        background-color:#7892c2;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        border:1px solid #4e6096;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:arial;
+        font-size:28px;
+        padding:12px 37px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #283966;
+}
+button:hover {
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+        background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+        background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+        background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+        background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+        background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+        background-color:#476e9e;
+}
+button:active {
+        position:relative;
+        vertical-align:middle;
+        text-align:center;
+        top:1px;
+}
+
+
+ul.enlarge{
+list-style-type:none; /*remove the bullet point*/
+margin-left:0;
+text-align: center;
+color: #373737;
+}
+ul.enlarge li{
+display:inline-block; /*places the images in a line*/
+position: relative;
+z-index: 0; /*resets the stack order of the list items - later we'll increase this*/
+margin:10px 40px 0 20px;
+}
+ul.enlarge img{
+background-color:#eae9d4;
+padding: 6px;
+-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-webkit-border-radius: 4px; 
+-moz-border-radius: 4px; 
+border-radius: 4px; 
+}
+ul.enlarge span{
+position:absolute;
+left: -9999px;
+background-color:#eae9d4;
+padding: 10px;
+font-family: 'Droid Sans', sans-serif;
+font-size:.9em;
+text-align: center; 
+color: #495a62; 
+-webkit-box-shadow: 0 0 20px rgba(0,0,0, .75));
+-moz-box-shadow: 0 0 20px rgba(0,0,0, .75);
+box-shadow: 0 0 20px rgba(0,0,0, .75);
+-webkit-border-radius: 8px; 
+-moz-border-radius: 8px; 
+border-radius:8px;
+}
+ul.enlarge li:hover{
+z-index: 50;
+cursor:pointer;
+}
+ul.enlarge span img{
+padding:2px;
+background:#ccc;
+}
+ul.enlarge li:hover span{ 
+top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+ul.enlarge li:hover:nth-child(2) span{
+left: -100px; 
+}
+ul.enlarge li:hover:nth-child(3) span{
+left: -200px; 
+}
+/**IE Hacks - see http://css3pie.com/ for more info on how to use CS3Pie and to download the latest version**/
+ul.enlarge img, ul.enlarge span{
+behavior: url(pie/PIE.htc); 
+}
